@@ -1,0 +1,10 @@
+.masthead {
+    background-image: url('../asset/img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

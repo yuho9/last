@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW2</title>
+    <style>
+        h4{
+           color:red;
+			font-size: 10px;
+        }
+		div{
+			 font-weight: bold;
+            background-color: lightblue;
+            width: 800px;
+            padding-left: 10px;
+		}
+
+    </style>
+
+</head>
+<body>
+<h3>취업 정보 계정 만들기</h3>
+<h4>*필수 입력 항목</h4>
+<div>기본 정보</div>
+<form>
+	<p><label for="u_name" style="display:inline-block;margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;">이 름<span style="color:red;">*</span></label>
+		<input type="text" id="u_name" size="8"></p>
+    <p><label for="u_email" style="display:inline-block;margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;">이메일<span style="color:red;">*</span></label>
+    	<input type="email" id="u_email" size="15" placeholder="id@domain_name"></p>
+	<p><label for="pwd" style="display:inline-block;margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;">암호<span style="color:red;">*</span></label>
+    	<input type="password" id="pwd" size="12"></p>
+	<p><label for="pwd_ch" style="display:inline-block;margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;">암호 확인<span style="color:red;">*</span></label>
+    	<input type="password" id="pwd_ch" size="12"></p>
+	<p><label for="mobile" style="display:inline-block;margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;">모바일 폰<span style="color:red;">*</span></label>
+    	<input type="tel" id="mobile" size="13" placeholder="010-0000-0000"></p>
+	<p><label for="u_hp" style="display:inline-block;margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;">개인 홈페이지</label>
+    	<input type="url" id="u_hp" size="30" placeholder="http://"></p>
+	<p><label for="u_address" style="display:inline-block;margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;">주소<span style="color:red;">*</span></label>
+    	<input type="text" id="u_address" size="30"></p>
+</form>
+<div>학력</div>
+<form>
+	<p><label for="s_name" style="display:inline-block;margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;">학교 명<span style="color:red;">*</span></label>
+		<input type="text" id="s_name" size="12"></p>
+	<p><label for="major" style="display:inline-block;margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;">전 공<span style="color:red;">*</span></label>
+		<input type="text" id="major" size="12"></p>
+	<p><label style="display: inline-block; margin-left: 8px;text-align: right;width: 130px;padding-right: 8px">졸업 여부<span style="color:red;">*</span></label>
+			<select name="graduation" id="selection" style="width: 150px;">
+    			<option value="1">---선택---</option>
+   		 		<option value="2">졸업예정</option>
+    			<option value="3">졸업</option>
+			</select>
+		</label></p>
+	<p><label style="display: inline-block; margin-left: 8px;text-align: right;width: 130px;padding-right: 8px">졸업(예정)일</label>
+		<input type="date"></p>
+</form>
+<div>업무 경력</div>
+<form>
+	<p><label for="j_name" style="display:inline-block;margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;">근무업체명</label>
+		<input type="text" id="j_name" size="20"></p>
+	<p><label for="position" style="display:inline-block;margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;">직위</label>
+		<input type="text" id="position" size="10"></p>
+	<p><label for="comments" style="display: inline-block; margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;">담당업무</label>
+			<textarea id="comments" name="comments" cols="80" row="10">이전 업체에서 담당한 업무를 기술하시오.</textarea>
+		</label></p>
+	<p><label for="experience" style="display: inline-block; width: 130px; text-align: right; margin-right: 8px;">근무년수</label>
+		<input type="number" id="experience" min="0" max="10" step="0.5" style="display: inline-block;"></p>
+</form>
+<div>자기소개서</div>
+<form>
+	<p><label style="display:inline-block;margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;">첨부 파일</label>
+		<input type="file" id="file"></p>
+</form>
+<p style="position: relative; margin-left: 200px;">
+	<input type="submit" value="제출">
+	<input type="submit" value="재작성">
+</p>
+</body>
+</html>
